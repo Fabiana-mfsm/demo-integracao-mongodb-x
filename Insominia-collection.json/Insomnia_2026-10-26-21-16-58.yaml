@@ -1,0 +1,371 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_d7c0543d19ff438eae68cd64bc52c6e2
+  created: 1792020678319
+  modified: 1792020678319
+  description: ""
+collection:
+  - name: "Requisições "
+    meta:
+      id: fld_c4ea9deeb8e34c36a4a897458ea55efc
+      created: 1792714990931
+      modified: 1792714990931
+      sortKey: -1792714990932
+      description: ""
+    children:
+      - name: Estudante
+        meta:
+          id: fld_58fd627d33f34b8f850f304d6cb64a04
+          created: 1792715044673
+          modified: 1792715044673
+          sortKey: -1792715044673
+          description: ""
+        children:
+          - url: http://localhost:8080/api/estudantes
+            name: POST
+            meta:
+              id: req_fb2ea35df8784a75bf7585210f6cfd34
+              created: 1792715057153
+              modified: 1792716071441
+              isPrivate: false
+              description: ""
+              sortKey: -1792715057153
+            method: POST
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/estudantes
+            name: BUSCAR TODOS
+            meta:
+              id: req_0823a82ed56f4e519f12be9d67bcff0f
+              created: 1792715890966
+              modified: 1792716073776
+              isPrivate: false
+              description: ""
+              sortKey: -1792715890966
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/estudantes/1
+            name: BUSCAR POR ID
+            meta:
+              id: req_54b0f555ced546f885e00124365cc268
+              created: 1792716116464
+              modified: 1792716225636
+              isPrivate: false
+              description: ""
+              sortKey: -1792716116464
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/estudantes/1
+            name: ATUALIZAR
+            meta:
+              id: req_4673c4820442434382934c74ee8ee241
+              created: 1792716227713
+              modified: 1792716463102
+              isPrivate: false
+              description: ""
+              sortKey: -1792716227713
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"nome": "João da Silva Santos",
+                		"idade": 30,
+                		"email": "joao.silva@email.com"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/estudantes/5
+            name: DELETAR
+            meta:
+              id: req_45f0b81e3b1143e0b47eb492913c0e2d
+              created: 1792716395963
+              modified: 1792716469834
+              isPrivate: false
+              description: ""
+              sortKey: -1792716395963
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: CURSO
+        meta:
+          id: fld_5ee3e02c28034e33a8c7f6a7d69eeee2
+          created: 1792716559286
+          modified: 1792716559286
+          sortKey: -1792716559286
+          description: ""
+        children:
+          - url: http://localhost:8080/api/cursos
+            name: POST
+            meta:
+              id: req_7418fb75d97143cd9faa2679c7633ea7
+              created: 1792716567080
+              modified: 1792717932917
+              isPrivate: false
+              description: ""
+              sortKey: -1792716567080
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "id": "4",
+                  "descricao": "Farmácia"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/cursos
+            name: BUSCAR TODOS
+            meta:
+              id: req_4b9f2da6f9cf49ba87a70fe6c7a9a383
+              created: 1792717946302
+              modified: 1792718005573
+              isPrivate: false
+              description: ""
+              sortKey: -1792717946302
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/cursos/3
+            name: BUSCAR POR ID
+            meta:
+              id: req_068f49c77f664921a69caf76b8c8ae3a
+              created: 1792718006756
+              modified: 1792718037682
+              isPrivate: false
+              description: ""
+              sortKey: -1792718006756
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/cursos/4
+            name: ATUALIZAR
+            meta:
+              id: req_fff4f18be089498c94b0d431ea41d0f1
+              created: 1792718039231
+              modified: 1793060209568
+              isPrivate: false
+              description: ""
+              sortKey: -1792718039231
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"descricao": "Curso de Farmácia"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/cursos/2
+            name: EXCLUIR
+            meta:
+              id: req_461b7e708fad49d383984eeb2d5c2ded
+              created: 1792718398619
+              modified: 1792718500750
+              isPrivate: false
+              description: ""
+              sortKey: -1792718398619
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Professor
+        meta:
+          id: fld_f1d5edc545c24d338cdcc03b24ced109
+          created: 1792867835124
+          modified: 1792867835124
+          sortKey: -1792867835124
+          description: ""
+        children:
+          - url: http://localhost:8080/api/professores
+            name: POST
+            meta:
+              id: req_f440cbb5d1374cb6a60f425c37964f57
+              created: 1792867839541
+              modified: 1792868253847
+              isPrivate: false
+              description: ""
+              sortKey: -1792867839541
+            method: POST
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/professores
+            name: "BUSCAR TODOS "
+            meta:
+              id: req_79c17ce03e814bc28bf48fc988754ec9
+              created: 1792868262439
+              modified: 1792868324081
+              isPrivate: false
+              description: ""
+              sortKey: -1792868262439
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/professores/4
+            name: BUSCAR POR ID
+            meta:
+              id: req_45f3f5cf3e8e47eea067b89d68bbae47
+              created: 1792868328541
+              modified: 1792868369481
+              isPrivate: false
+              description: ""
+              sortKey: -1792868328541
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/professores/2
+            name: ATUALIZAR
+            meta:
+              id: req_d01f17ee5f6048e3baf2ab27b45a34ce
+              created: 1792868376034
+              modified: 1792868537284
+              isPrivate: false
+              description: ""
+              sortKey: -1792868376034
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Ana Paula Ferreira",
+                	"email": "ana.paula@email.com",
+                	"idade": 25
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/professores/3
+            name: EXCLUIR
+            meta:
+              id: req_2c00b2b3b9474f8ba534051e24873a6f
+              created: 1792868560948
+              modified: 1792868617487
+              isPrivate: false
+              description: ""
+              sortKey: -1792868560948
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1635e3a712ca3130d6877f600e0b2ecc54e237f7
+    created: 1792020678325
+    modified: 1792020678325
+environments:
+  name: Base Environment
+  meta:
+    id: env_1635e3a712ca3130d6877f600e0b2ecc54e237f7
+    created: 1792020678322
+    modified: 1792020678322
+    isPrivate: false
